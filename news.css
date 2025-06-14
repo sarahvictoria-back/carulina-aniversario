@@ -42,9 +42,6 @@ body{
     animation-name: Carulina3;
     animation-duration: 5s;
     animation-delay: 9s;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-
 }
 .fourth-text{
     font-size: 3.0rem;
@@ -68,7 +65,8 @@ body{
     animation-name: Carulina5;
     animation-duration: 18s;
     animation-delay: 16s;
-
+    transform: rotate(-90deg);
+    white-space: nowrap;
 }
 @keyframes Carulina1 {
     0% {
