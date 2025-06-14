@@ -1,20 +1,16 @@
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-style: Arial;
     background: black;
 }
 .animation-box{
-    width: 100%;
-    height: 100vh;
-    padding: 1rem;
+    width: 75%;
+    height: 27.5rem;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 .first-text{
-    font-size: 4vw;
+    font-size: 4.0rem;
     color: white;
     position: absolute;
     left: 2.5rem;
@@ -25,7 +21,7 @@ body{
 
 }
 .second-text{
-    font-size: 3vw;
+    font-size: 3.0rem;
     color: white;
     position: absolute;
     
@@ -37,7 +33,7 @@ body{
 
 }
 .third-text{
-    font-size: 2vw;
+    font-size: 2.0rem;
     color: white;
     position: absolute;
     left: 45%;
@@ -51,7 +47,7 @@ body{
 
 }
 .fourth-text{
-    font-size: 3vw;
+    font-size: 3.0rem;
     color: #f2db10;
     position: absolute;
     left: 10%;
@@ -63,7 +59,7 @@ body{
 
 }
 .fifth-text{
-    font-size: 3.5vw;
+    font-size: 3.5rem;
     color: rgb(255, 2, 2);
     position: absolute;
     left: 5%;
