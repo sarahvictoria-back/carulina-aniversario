@@ -135,3 +135,48 @@ body{
     right: -20px;
     border-radius: 50px;
 }
+@media (max-width: 600px) {
+  .voltar {
+    width: 90%;
+    height: 300px;
+  }
+
+  .frente,
+  .frente::before,
+  .frente::after,
+  .top {
+    border-left: 45vw solid transparent;
+    border-right: 45vw solid transparent;
+  }
+
+  .frente {
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .carta {
+    width: 90%;
+    height: 280px;
+    left: 5%;
+    top: 5%;
+  }
+
+  .texto {
+    font-size: 12px;
+  }
+
+  .heart {
+    left: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .heart::before,
+  .heart::after {
+    width: 40px;
+    height: 40px;
+  }
+}
