@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #d3a1cf;
+}
+.envelope{
+    position: relative;
+    cursor: pointer;
+}
+
+.voltar{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background: #370b31;
+}
+.frente{
+    position: absolute;
+    border-right: 200px solid #572351;
+    border-top: 175px solid transparent;
+    border-bottom: 176px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 200px;
+    z-index: 3;
+}
+.frente:before{
+    content: "";
+    position: absolute;
+    border-left: 200px solid #572351;
+    border-top: 175px solid transparent;
+    border-bottom: 176px solid transparent;
+    height: 0;
+    width: 0;
+    top: -175px;
+    left: -200px;
+}
+.frente::after{
+    content: "";
+    position: absolute;
+    border-bottom: 180px solid #340e30;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    height: 0;
+    width: 0;
+    top: -5px;
+    left: -200px;
+}
+.top{
+    position: absolute;
+    border-top: 175px solid #270a26;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    height: 0;
+    width: 0;
+    top: 0;
+    transform-origin: top;
+    transition: 0.4s;
+}
+.envelope:hover .frente{
+    pointer-events: none;
+}
+.envelope:hover .top{
+    transform: rotateX(160deg);
+}
+.carta{
+    position: absolute;
+    background: #c0abab;
+    width: 380px;
+    height: 330px;
+    top: 10px;
+    left: 10px;
+    transition: 0.2s;
+}
+.envelope:hover .carta{
+    transform: translateY(-240px);
+    z-index: 2;
+}
+.texto1{
+    position: absolute;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+.texto{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-weight: initial;
+    color: black;
+    top: -20px;
+    left: 20px;
+}
+.heart{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 10px;
+    right: -160px;
+    transform: rotate(-45deg);
+    box-shadow: -5px 10px 90px red;
+    animation: Carulina 0.6s infinite ease-in-out;
+}
+
+@keyframes Carulina {
+    0%{
+        transform: rotate(-45deg) scale(1);
+    }
+    50%{
+        transform: rotate(-45deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1);
+    }
+}
+.heart:before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    top: -20px;
+    border-radius: 50px;
+}
+.heart:after{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    right: -20px;
+    border-radius: 50px;
+}
