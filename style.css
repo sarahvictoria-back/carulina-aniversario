@@ -63,6 +63,9 @@ body{
 .envelope:hover .top{
     transform: rotateX(160deg);
 }
+.envelope:hover .frente {
+    pointer-events: none;
+}
 .carta{
     position: absolute;
     background: #c0abab;
