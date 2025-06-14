@@ -155,3 +155,9 @@ body{
 .botao-link:hover {
     background-color: #a63a82;
 }
+@media (max-width: 600px) {
+    .botao-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
