@@ -4,10 +4,22 @@ body{
     justify-content: center;
     height: 100vh;
     background: #d3a1cf;
+    background: url("clarice.webp") no-repeat center center fixed;
+    background-size: cover;
+    
 }
 .envelope{
     position: relative;
     cursor: pointer;
+}
+.envelopes{
+  display: flex;
+  gap: 60px;           /* espaço entre eles */
+  justify-content: center;
+  align-items: flex-end;/* faz as bases alinharem */
+}
+.envelopes p{
+    position: center;
 }
 
 .voltar{
@@ -76,12 +88,14 @@ body{
     transition: 0.2s;
 }
 .envelope:hover .carta{
-    transform: translateY(-240px);
-    z-index: 2;
+    transform: translateY(-230px);
+    transition: 1s;
+    z-index: 3;
 }
 .texto1{
-    position: absolute;
-    color: white;
+    text-align: center;
+    position: center;
+    color: rgb(41, 8, 8);
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 .texto{
@@ -95,14 +109,14 @@ body{
     left: 20px;
 }
 .heart{
-    background-color: red;
+    background-color: rgb(152, 11, 140);
     height: 50px;
     width: 50px;
     position: relative;
     top: 10px;
     right: -160px;
     transform: rotate(-45deg);
-    box-shadow: -5px 10px 90px red;
+    box-shadow: -5px 10px 90px rgb(152, 11, 140);
     animation: Carulina 0.6s infinite ease-in-out;
 }
 
@@ -122,7 +136,7 @@ body{
     position: absolute;
     height: 50px;
     width: 50px;
-    background-color: red;
+    background-color: rgb(152, 11, 140);
     top: -20px;
     border-radius: 50px;
 }
@@ -131,7 +145,13 @@ body{
     position: absolute;
     height: 50px;
     width: 50px;
-    background-color: red;
+    background-color: rgb(152, 11, 140);
     right: -20px;
     border-radius: 50px;
+}
+@media (max-width: 700px){
+  .envelopes{
+    flex-direction: column;
+    align-items: center;
+  }
 }
