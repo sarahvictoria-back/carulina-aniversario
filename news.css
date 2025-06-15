@@ -57,7 +57,7 @@ body{
 }
 .fifth-text{
     font-size: 2.5rem;
-    color: rgb(255, 2, 2);
+    color: red;
     position: absolute;
     left: 5%;
     bottom: 25%;
@@ -67,6 +67,7 @@ body{
     animation-delay: 16s;
     transform: rotate(-90deg);
     white-space: nowrap;
+
 }
 @keyframes Carulina1 {
     0% {
